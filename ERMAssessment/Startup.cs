@@ -31,7 +31,7 @@ namespace ERMAssessment
                 c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
                 {
                     Version = "1.0",
-                    Title = "Cars Api",
+                    Title = "ERM Api",
                     Description = "Api for getting values 20% more and less than median"
                 });
             });

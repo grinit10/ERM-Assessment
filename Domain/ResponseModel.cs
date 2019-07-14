@@ -16,7 +16,7 @@ namespace Domain
 
     public class FileRec
     {
-        public DateTime DateTime { get; set; }
+        public string DateTime { get; set; }
         public decimal Value { get; set; }
         public decimal MedianValue { get; set; }
     }

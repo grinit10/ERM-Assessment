@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using Domain;
 using Services;
@@ -15,21 +16,21 @@ namespace ERMAssessment.Tests.Services
         {
             _evenRecs = new List<MedianModel>()
             {
-                new MedianModel{ DateTime = DateTime.Now, Value = 0},
-                new MedianModel{ DateTime = DateTime.Now, Value = 1},
-                new MedianModel{ DateTime = DateTime.Now, Value = 2},
-                new MedianModel{ DateTime = DateTime.Now, Value = 3},
-                new MedianModel{ DateTime = DateTime.Now, Value = 4},
-                new MedianModel{ DateTime = DateTime.Now, Value = 5}
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 0},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 1},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 2},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 3},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 4},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 5}
             };
 
             _oddRecs = new List<MedianModel>()
             {
-                new MedianModel{ DateTime = DateTime.Now, Value = 0},
-                new MedianModel{ DateTime = DateTime.Now, Value = 1},
-                new MedianModel{ DateTime = DateTime.Now, Value = 2},
-                new MedianModel{ DateTime = DateTime.Now, Value = 3},
-                new MedianModel{ DateTime = DateTime.Now, Value = 4},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 0},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 1},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 2},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 3},
+                new MedianModel{ DateTime = DateTime.Now.ToString(CultureInfo.InvariantCulture), Value = 4},
             };
         }
 

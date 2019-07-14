@@ -5,6 +5,6 @@ namespace Domain
     public class MedianModel
     {
         public decimal Value { get; set; }
-        public DateTime DateTime { get; set; }
+        public string DateTime { get; set; }
     }
 }
